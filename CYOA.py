@@ -16,8 +16,22 @@ if first_choice == "1":
 
     if second_choice == "1":
         print("You walk to the station, but the pizza gets cold while you're gone.")
+        print("[bold red]GAME OVER!!!!!![/bold red]")
     elif second_choice == "2":
         print("The soda sizzles and the engine hisses, z Somehow... it works!")
+        print("\nYou're running late. Which way do you go?")
+        print("1) Highway")
+        print("2) Back roads")
+        third_choice = input("(1,2) ")
+
+        if third_choice == "1":
+            print("No traffic! You make it just in time.")
+            print("[bold green]YOU WIN!!!![/bold green]")
+        elif third_choice == "2":
+            print("You get stuck behind a tractor and the pizza gets cold.")
+            print("[bold red]GAME OVER!!!!!![/bold red]")
+        else:
+            print("Invalid choice. The pizza gets colder.")
     else:
         print("Invalid choice. The pizza gets colder.")
 
